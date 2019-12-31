@@ -9,6 +9,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'	//导入路由的包并安装路由
 Vue.use(VueRouter)
 
+//导入axios (vue.js ajax包)
+import axios from 'axios'
+// Vue.use(axios)
+Vue.prototype.$axios = axios;
+
 //按需导入mint-ui组件
 import { Header,Swipe,SwipeItem } from 'mint-ui'
 import 'mint-ui/lib/style.css'
